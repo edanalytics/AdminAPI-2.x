@@ -38,8 +38,7 @@ public class AuthStrategyResolver : IAuthStrategyResolver
                         {
                             var authStrategy = dbAuthStrategies.SingleOrDefault(
                             x => x.AuthorizationStrategyName.Equals(
-                                strategy.AuthStrategyName,
-                                StringComparison.InvariantCultureIgnoreCase));
+                                strategy.AuthStrategyName));
 
                             if (authStrategy != null)
                             {
